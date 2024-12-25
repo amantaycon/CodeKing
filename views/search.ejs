@@ -1,0 +1,40 @@
+<%- include('partials/head_sec') %>
+
+    <body>
+        <%- include('partials/header') %>
+            <main class="head center m1">
+                <div class="h1 fhw h11">
+                    <%- include('partials/navbar') %>
+                        <div class="fhw center">
+                            <div id="postdiv" class="mancon mart20">
+                                <div class="conitm center">
+                                    <div class="mcdata search">
+                                        <div class="searchdiv">
+                                            <div>
+                                                <div class="selogo"><img class="selogo" src="/image/weblogo.png" alt="">
+                                                </div>
+                                            </div><input class="comment commentser" name="search" placeholder="Search"
+                                                id="search" oninput="matchdata(this,1)" autocomplete="off" autofocus
+                                                onkeydown="serchenter(event, this)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%- include('partials/suggested') %>
+                </div>
+            </main>
+            <div id="listfloat" class="lgn postfloat">
+                <div class="flexc">
+                    <div id="listfloathead" class="mart20 floatheit"></div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+            <script src="/js/nave.js"></script>
+            <script src="/js/rightnav.js"></script>
+            <script src="/js/help.js"></script>
+            <script src="/js/search.js"></script>
+    </body>
+
+    </html>

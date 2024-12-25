@@ -1,0 +1,147 @@
+<%- include('partials/head_sec') %>
+
+    <body>
+        <%- include('partials/header') %>
+            <main class="head center m1">
+                <div class="h1 fhw h11">
+                    <%- include('partials/navbar') %>
+                        <div class="fhw center">
+                            <div class="mancon mart20">
+                                <div class="sehed center"><span class="black">Settings</span></div>
+                                <div class="presave">
+                                    <div onclick="updateData(event)" class="prsave point"><span>Save</span></div>
+                                </div>
+                                <div class="setting">
+                                    <div class="sbox seti">
+                                        <div class="prfpic">
+                                            <img class="prfpic" src=/<%- data.userurl %>/profile_pic alt="DP">
+                                            <input id="uphoto" name="dp" type="file" accept="image/*">
+                                            <label for="uphoto" class="updatep"><span>Update Photo</span></label>
+                                        </div>
+                                        <div id="prephoto">
+                                            <div class="predesin">
+                                                <div class="cross"><svg onclick="hidefloat()" class="svg point"
+                                                        fill="var(--black)" viewBox="0 0 490 490" xml:space="preserve">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                            stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <polygon
+                                                                points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 ">
+                                                            </polygon>
+                                                        </g>
+                                                    </svg></div>
+                                                <div class="adjstpre">
+                                                    <img id="preview" alt="Preview" />
+                                                    <button id="cropButton">Upload</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="seticon">
+                                            <div class="sminibox">
+                                                <label class="smboxl" for="username">Update username</label>
+                                                <input id="username" class="smboxi" oninput="userurlChanged(this)" type="text"
+                                                    placeholder="Enter Unique username" value=<%- data.userurl %>>
+                                            </div>
+                                            <div class="sminibox">
+                                                <label class="smboxl" for="fullname">Update Full Name</label>
+                                                <input id="fullname" class="smboxi" type="text"
+                                                    placeholder="Enter Your Full Name" value="<%- data.fullname %>">
+                                            </div>
+                                        </div>
+                                        <div class="seticon">
+                                            <div class="sminibox">
+                                                <label class="smboxl" for="gender">Update Gender</label>
+                                                <select id="gender" class="smboxi point">
+                                                    <option <% if(data.gender==0){ %>selected<% } %> value="0" >Male
+                                                    </option>
+                                                    <option value="1" <% if(data.gender==1){ %>selected<% } %> >Female
+                                                    </option>
+                                                    <option value="2" <% if(data.gender==2){ %>selected<% } %> >Other
+                                                    </option>
+                                                    <option value=null <% if(data.gender==null){ %>selected<% } %>
+                                                            disabled>Gender
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="sminibox">
+                                                <label class="smboxl" for="dob">Update DOB</label>
+                                                <input id="dob" class="smboxi" type="date" value=<%- data.dob %>>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sbox grida">
+                                        <div class="sminibox">
+                                            <label class="smboxl" for="bio">Bio</label>
+                                            <textarea class="smboxi textarea" name=""
+                                                id="bio"><%- data.bio %></textarea>
+                                        </div>
+                                        <div class="sminibox">
+                                            <label class="smboxl" for="notification">Notifications</label>
+                                            <select id="notification" class="smboxi point">
+                                                <option value="0" <% if(data.notification==0){ %>selected<% } %>>Only
+                                                        This Web
+                                                        Application</option>
+                                                <option <% if(data.notification==1){ %>selected<% } %>
+                                                        value="1">Notifications on
+                                                        Email Id</option>
+                                            </select>
+                                        </div>
+                                        <div class="sminibox">
+                                            <label class="smboxl" for="theme">Themes</label>
+                                            <select id="theme" class="smboxi point">
+                                                <option value="0" <% if(data.theme==0){ %>selected<% } %>>Default
+                                                </option>
+                                                <option value="1" <% if(data.theme==1){ %>selected<% } %>>Rositree
+                                                </option>
+                                                <option value="2" <% if(data.theme==2){ %>selected<% } %>>Orangemoon
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="sbox grida">
+                                        <div class="sminibox">
+                                            <label class="smboxl" for="account_type">Account Type</label>
+                                            <select id="account_type" class="smboxi point">
+                                                <option value="0" <% if(data.account_type==0){ %>selected<% } %>>Public
+                                                </option>
+                                                <option value="1" <% if(data.account_type==1){ %>selected<% } %>>Private
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="sminibox">
+                                            <label class="smboxl" for="conshow">Connection Show/Hide</label>
+                                            <select id="conshow" class="smboxi point">
+                                                <option value="0" <% if(data.conshow==0){ %>selected<% } %>>Public
+                                                </option>
+                                                <option value="1" <% if(data.conshow==1){ %>selected<% } %>>Private
+                                                </option>
+                                                <option value="2" <% if(data.conshow==2){ %>selected<% } %>>Only Me
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="sminibox">
+                                            <label class="smboxl" for="message_privacy">Messages</label>
+                                            <select id="message_privacy" class="smboxi point">
+                                                <option value="0" <% if(data.message_privacy==0){ %>selected<% } %>
+                                                        >EveryOne
+                                                </option>
+                                                <option value="1" <% if(data.message_privacy==1){ %>selected<% } %>>Only
+                                                        Connected People</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </main>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="/js/nave.js"></script>
+
+    </body>
+
+    </html>

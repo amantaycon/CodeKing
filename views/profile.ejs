@@ -1,0 +1,69 @@
+<%- include('partials/head_sec') %>
+
+    <body>
+        <%- include('partials/header') %>
+            <main class="head center m1">
+                <div class="h1 fhw h11">
+                    <%- include('partials/navbar') %>
+                        <div class="fhw center">
+                            <div id="postdiv" class="mancon mart20">
+                                <div class="setting">
+                                    <div class="sbox seti bgwhite">
+                                        <div class="prfpic">
+                                            <img class="prfpic" src="/<%- data1.userurl %>/profile_pic" alt="">
+                                        </div>
+                                        <div class="protop nowrap">
+                                            <div class="pminibox bgwhite marle">
+                                                <label class="smboxi fonsize" ><span class="orange"><%-
+                                                            data1.userurl %></span></label>
+                                            </div>
+                                            <div class="pminibox bgwhite marle">
+                                                <label class="smboxi fonsize" ><span class="black bold"><%-
+                                                            data1.fullname %></span></label>
+                                            </div>
+                                            <div id="conBtnPrt" class="poupload consty">
+                                                <button id="conBtn" class="buttonu point proconfo" onclick="conchange(<%- data1.id %>)"></button>
+                                            </div>
+                                            <div class="pminibox bgwhite martop">
+                                                <div class="pconde gridro">
+                                                    <% function formatNumber(num) { if (num>= 1e9) return (num /
+                                                        1e9).toFixed(1) + 'B';
+                                                        if (num >= 1e6) return (num / 1e6).toFixed(1) + 'M';
+                                                        if (num >= 1e3) return (num / 1e3).toFixed(1) + 'K';
+                                                        return num;
+                                                        }
+                                                        %>
+                                                        <div class="pocon1 point"><b><%= formatNumber(data2.post_c) %> </b>Post</div>
+                                                        <div onclick="showListUser('connected', <%- data1.id %>)" class="pocon1 point"><b><%= formatNumber(data2.contd_c) %> </b>Connected
+                                                        </div>
+                                                        <div onclick="showListUser('connecting', <%- data1.id %>)" id="cong_list" class="pocon1 point"><b><%= formatNumber(data2.contg_c) %> </b>Connecting
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bio">
+                                    <pre class="wrap"><%- data1.bio %></pre>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    <%- include('partials/suggested') %>
+                </div>
+            </main>
+            <div id="listfloat" class="lgn postfloat"><div class="flexc"><div id="listfloathead" class="mart20 floatheit"></div></div></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+            <script src="/js/nave.js"></script>
+            <script src="/js/profile.js"></script>
+            <script src="/js/rightnav.js"></script>
+            <script>
+                const au = <%- data.id %>;
+                const ou = <%- data1.id %>;
+            </script>
+            <script src="/js/pagedata.js"></script>            
+    </body>
+
+    </html>

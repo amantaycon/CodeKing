@@ -1,0 +1,230 @@
+<div class="lgn lgn1" id="lgn0mes">
+    <div class="flexc shdo">
+        <div class="mart20 mart20mini">
+            <li class="lin no-select">
+                <a class="fxcc sideb <% if(data.click == 1){%><%- 'backgreen' %><%}%>" href="/">
+                    <div class="sideb">
+                        <div class="svg">
+                            <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16C9.85038 16.6303 10.8846 17 12 17C13.1154 17 14.1496 16.6303 15 16"
+                                    stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round" />
+                                <path
+                                    d="M21.6359 12.9579L21.3572 14.8952C20.8697 18.2827 20.626 19.9764 19.451 20.9882C18.2759 22 16.5526 22 13.1061 22H10.8939C7.44737 22 5.72409 22 4.54903 20.9882C3.37396 19.9764 3.13025 18.2827 2.64284 14.8952L2.36407 12.9579C1.98463 10.3208 1.79491 9.00229 2.33537 7.87495C2.87583 6.7476 4.02619 6.06234 6.32691 4.69181L7.71175 3.86687C9.80104 2.62229 10.8457 2 12 2C13.1543 2 14.199 2.62229 16.2882 3.86687L17.6731 4.69181C19.9738 6.06234 21.1242 6.7476 21.6646 7.87495"
+                                    stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="center fontsb shrespon">Home</div>
+                    </div>
+                </a>
+            </li>
+            <li class="lin no-select">
+                <a class="fxcc sideb <% if(data.click == 2){%><%- 'backgreen' %><%}%>" href="/search">
+                    <div class="sideb">
+                        <div class="svg">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                                    stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="center fontsb shrespon">Search</div>
+                    </div>
+                </a>
+            </li>
+            <li class="lin no-select notifihide" hidden>
+                <a class="fxcc sideb <% if(data.click == 3){%><%- 'backgreen' %><%}%>" href="/notification">
+                    <div class="sideb">
+                        <div class="svg">
+                            <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 19.25C15 20.0456 14.6839 20.8087 14.1213 21.3713C13.5587 21.9339 12.7956 22.25 12 22.25C11.2044 22.25 10.4413 21.9339 9.87869 21.3713C9.31608 20.8087 9 20.0456 9 19.25"
+                                    stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M5.58096 18.25C5.09151 18.1461 4.65878 17.8626 4.36813 17.4553C4.07748 17.048 3.95005 16.5466 4.01098 16.05L5.01098 7.93998C5.2663 6.27263 6.11508 4.75352 7.40121 3.66215C8.68734 2.57077 10.3243 1.98054 12.011 1.99998V1.99998C13.6977 1.98054 15.3346 2.57077 16.6207 3.66215C17.9069 4.75352 18.7557 6.27263 19.011 7.93998L20.011 16.05C20.0723 16.5452 19.9462 17.0454 19.6576 17.4525C19.369 17.8595 18.9386 18.144 18.451 18.25C14.2186 19.2445 9.81332 19.2445 5.58096 18.25V18.25Z"
+                                    stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="center fontsb shrespon">Notifications</div>
+                    </div>
+                </a>
+            </li>
+            <li class="lin no-select">
+                <div id="postab" class="fxcc sideb point" onclick="postTab()">
+                    <div class="sideb">
+                        <div class="svg">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12H20M12 4V20" stroke="var(--black)" stroke-width="var(--bold)"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="center fontsb shrespon">Post</div>
+                    </div>
+                </div>
+            </li>
+            <div id="fixedTabMenu">
+                <div class="tabs">
+                    <label for="poimage" class="tab"><i class="fas fa-image"></i><span
+                            class="poflotn">Image</span></label>
+                    <label for="povideo" class="tab"><i class="fas fa-video"></i><span
+                            class="poflotn">Video</span></label>
+                    <div onclick="floattab('text')" class="tab"><i class="fas fa-file-alt"></i><span
+                            class="poflotn">Text</span></div>
+                    <div onclick="floattab('code')" class="tab"><i class="fas fa-code"></i><span
+                            class="poflotn">Code</span></div>
+                    <label for="podoc" class="tab"><i class="fas fa-file"></i><span class="poflotn">File</span></label>
+                </div>
+            </div>
+            <li class="lin no-select">
+                <a class="fxcc sideb <% if(data.click == 4){%><%- 'backgreen' %><%}%>" href="/Messages">
+                    <div class="sideb">
+                        <div class="svg">
+                            <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.47 16.83L18.86 19.99C18.96 20.82 18.07 21.4 17.36 20.97L13.17 18.48C12.71 18.48 12.26 18.45 11.82 18.39C12.56 17.52 13 16.42 13 15.23C13 12.39 10.54 10.09 7.49997 10.09C6.33997 10.09 5.26997 10.42 4.37997 11C4.34997 10.75 4.33997 10.5 4.33997 10.24C4.33997 5.68999 8.28997 2 13.17 2C18.05 2 22 5.68999 22 10.24C22 12.94 20.61 15.33 18.47 16.83Z"
+                                    stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13 15.23C13 16.42 12.56 17.5201 11.82 18.3901C10.83 19.5901 9.26 20.36 7.5 20.36L4.89 21.91C4.45 22.18 3.89 21.81 3.95 21.3L4.2 19.3301C2.86 18.4001 2 16.91 2 15.23C2 13.47 2.94 11.9201 4.38 11.0001C5.27 10.4201 6.34 10.0901 7.5 10.0901C10.54 10.0901 13 12.39 13 15.23Z"
+                                    stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="center fontsb shrespon">Messages</div>
+                    </div>
+                </a>
+            </li>
+            <li class="lin no-select">
+                <a class="fxcc sideb <% if(data.click == 5){%><%- 'backgreen' %><%}%>" href=/<%- data.userurl %>>
+                    <div class="sideb">
+                        <div class="svg">
+                            <img class="svg pro" src=/<%- data.userurl %>/profile_pic alt="DP">
+                        </div>
+                        <div class="center fontsb shrespon">Profile</div>
+                    </div>
+                </a>
+            </li>
+            <li class="lin sethide">
+                <div id="moretab" onclick="postTab1()" class="point no-select fxcc sideb <% if(data.click == 6){%><%- 'backgreen' %><%}%>">
+                    <div class="sideb">
+                        <div class="svg">
+                            <svg class="svg" viewBox="0 0 20 20" fill="var(--black)" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M2 4.75C2 4.33579 2.33579 4 2.75 4H17.25C17.6642 4 18 4.33579 18 4.75C18 5.16421 17.6642 5.5 17.25 5.5H2.75C2.33579 5.5 2 5.16421 2 4.75Z"
+                                        fill="var(--black)"></path>
+                                    <path
+                                        d="M2 9.75C2 9.33579 2.33579 9 2.75 9H17.25C17.6642 9 18 9.33579 18 9.75C18 10.1642 17.6642 10.5 17.25 10.5H2.75C2.33579 10.5 2 10.1642 2 9.75Z"
+                                        fill="var(--black)"></path>
+                                    <path
+                                        d="M2.75 14C2.33579 14 2 14.3358 2 14.75C2 15.1642 2.33579 15.5 2.75 15.5H17.25C17.6642 15.5 18 15.1642 18 14.75C18 14.3358 17.6642 14 17.25 14H2.75Z"
+                                        fill="var(--black)"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="center fontsb shrespon">More</div>
+                    </div>
+                </div>
+            </li>
+            <div id="moreMenu">
+                <div class="tabs">
+                    <a href="/setting" for="poimage" class="tab ahead"><i class="fas fa-cog"></i><span
+                            class="poflotn">Setting</span></a>
+                    <a href="/save" for="povideo" class="tab ahead"><i class="fas fa-bookmark"></i><span
+                            class="poflotn">Save</span></a>
+                    <a href="/logout" for="podoc" class="tab ahead"><i class="fas fa-sign-out-alt"></i><span class="poflotn">Logout</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input id="poimage" type="file" accept="image/*" hidden>
+<input id="povideo" type="file" accept="video/*" hidden>
+<input id="podoc" type="file" hidden>
+
+
+<div id="pfTab" class="postfloat">
+    <div class="postcon">
+        <div class="cross">
+            <svg onclick="hidefloat1()" class="svg point" fill="var(--black)" viewBox="0 0 490 490"
+                xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <polygon
+                        points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 ">
+                    </polygon>
+                </g>
+            </svg>
+        </div>
+        <div class="postda1 center">
+            <img id="imagepre" class="postda" src="" alt="">
+            <video id="videopre" class="postda" controls>
+                <source src="" type="video/mp4">
+            </video>
+            <div id="textpre">
+                <div id="text-container" contenteditable="true">
+                    <p></p>
+                </div>
+
+                <div class="controls">
+                    <label for="fontSize">Font Size:</label>
+                    <input type="number" id="fontSize" value="16" min="8" onchange="updateTextStyle()">
+
+                    <label for="align">Align Text:</label>
+                    <select id="align" onchange="updateTextStyle()">
+                        <option value="left">Left</option>
+                        <option value="center">Center</option>
+                        <option value="right">Right</option>
+                    </select>
+
+                    <label for="bgColor">BG Color:</label>
+                    <input type="color" id="bgColor" value="#ffffff" onchange="updateTextStyle()">
+
+                    <label for="textColor">Text Color:</label>
+                    <input type="color" id="textColor" value="#000000" onchange="updateTextStyle()">
+                </div>
+            </div>
+            <div id="codepre" class="code">
+                <code class="code1">
+                    <div id="line-numbers"></div>
+                    <textarea class="codet" id="code-input" oninput="updateLineNumbers()" onscroll="syncScroll()">
+// Type your code hear
+</textarea></code>
+            </div>
+            <div id="filepre" class="file center">
+                <div class="center filer"><svg width="150px" height="150px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" transform="rotate(270)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M21 11V15.8C21 16.9201 21 17.4802 20.782 17.908C20.5903 18.2843 20.2843 18.5903 19.908 18.782C19.4802 19 18.9201 19 17.8 19H6.2C5.0799 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2C3 7.0799 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H15M21 11L15 5M21 11H16.6C16.0399 11 15.7599 11 15.546 10.891C15.3578 10.7951 15.2049 10.6422 15.109 10.454C15 10.2401 15 9.96005 15 9.4V5"
+                                stroke="var(--black)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </g>
+                    </svg>
+                    <p id="filena"></p>
+                </div>
+            </div>
+        </div>
+        <div class="tithead">
+            <div class="contit">
+                <textarea name="titlep" id="titlep" class="titlep" placeholder="Add a Title..."></textarea>
+            </div>
+        </div>
+        <div class="poupload">
+            <select id="post_pri" class="buttonu point" style="left: 0; right: unset;">
+                <option value="0" selected>Public</option>
+                <option value="1">Only me</option>
+            </select>
+            <button class="buttonu point" onclick="postdata()">Upload</button>
+        </div>
+
+    </div>
+</div>

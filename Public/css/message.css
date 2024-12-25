@@ -1,0 +1,23 @@
+@media screen and ((max-width: 900px)) {
+    #lgn1mes {
+        display: none;
+    }
+
+    #lgn2mes {
+        width: 99%;
+        display: flex;
+        position: unset;
+    }
+    .backsvg{
+        display: flex;
+    }
+}
+
+@media screen and ((max-width: 600px)) {
+    .messtab {
+        display: none;
+    }
+    .flexcmes{
+        width: 100%;
+    }
+}

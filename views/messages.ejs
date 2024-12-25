@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aman Taycon">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="shortcut icon" href="/image/CodeKing.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/setting.css">
+    <link rel="stylesheet" href="/css/floattab.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/js/codefile.js"></script>
+    <%- data.themes %>
+    <title>Code King: A Social For Coders</title>
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/message.css">
+    <script>
+        const name = window.location.pathname.split('/')[1];
+    </script>
+</head>
+
+    <body>
+        <div style="display: none;" hidden>
+            <%- include('partials/header') %>
+        </div>
+        <main class="head center m1 head1">
+            <div class="h1 fhw h11">
+                <%- include('partials/navbar') %>
+                    <div class="fhw center" id="lgn1mes">
+                        <div id="postdiv" class="mancon">
+                            <div class="center" style="height: 100%; width: 100%; flex-direction: column;">
+                                <svg style="height: 200px; width: 200px;" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.47 16.83L18.86 19.99C18.96 20.82 18.07 21.4 17.36 20.97L13.17 18.48C12.71 18.48 12.26 18.45 11.82 18.39C12.56 17.52 13 16.42 13 15.23C13 12.39 10.54 10.09 7.49997 10.09C6.33997 10.09 5.26997 10.42 4.37997 11C4.34997 10.75 4.33997 10.5 4.33997 10.24C4.33997 5.68999 8.28997 2 13.17 2C18.05 2 22 5.68999 22 10.24C22 12.94 20.61 15.33 18.47 16.83Z"
+                                        stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M13 15.23C13 16.42 12.56 17.5201 11.82 18.3901C10.83 19.5901 9.26 20.36 7.5 20.36L4.89 21.91C4.45 22.18 3.89 21.81 3.95 21.3L4.2 19.3301C2.86 18.4001 2 16.91 2 15.23C2 13.47 2.94 11.9201 4.38 11.0001C5.27 10.4201 6.34 10.0901 7.5 10.0901C10.54 10.0901 13 12.39 13 15.23Z"
+                                        stroke="var(--black)" stroke-width="var(--bold)" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                                <p style="font-size: xx-large;">Start Messages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <%- include('partials/suggested') %>
+            </div>
+        </main>
+        <div id="listfloat" class="lgn postfloat">
+            <div class="flexc">
+                <div id="listfloathead" class="mart20 floatheit"></div>
+            </div>
+        </div>
+        <div class="fhw center messtab" id="messtab">
+            <div class="mancon">
+                <div class="meshead center bono">
+                    <div class="h1 fhw grid3">
+                        <div class="maifon clrgrn ">
+                            <a href="/" class="messtextside" style="text-decoration: none;"><span class="maifon clrgrn">{</span><span
+                                    class="black nm fsp1"><span class="clrorg">C</span>ode<span
+                                        class="clrgrn">K</span>ing</span><span class="maifon clrorg">}</span></a>
+                        </div>
+                        <div class="center message">
+                            <div id="imogiparent">
+                                <div id="imogifloat" style="display: none;">
+                                    <div class="emoji-container no-select">
+                                        <!-- Smileys & Emotions -->
+                                        <div class="emoji">😀</div>
+                                        <div class="emoji">😁</div>
+                                        <div class="emoji">😂</div>
+                                        <div class="emoji">🤣</div>
+                                        <div class="emoji">😃</div>
+                                        <div class="emoji">😄</div>
+                                        <div class="emoji">😅</div>
+                                        <div class="emoji">😆</div>
+                                        <div class="emoji">😉</div>
+                                        <div class="emoji">😊</div>
+                                        <div class="emoji">😋</div>
+                                        <div class="emoji">😎</div>
+                                        <div class="emoji">😍</div>
+                                        <div class="emoji">😘</div>
+                                        <div class="emoji">😗</div>
+                                        <div class="emoji">😙</div>
+                                        <div class="emoji">😚</div>
+                                        <div class="emoji">🥰</div>
+                                        <div class="emoji">🤗</div>
+                                        <div class="emoji">🤩</div>
+                                        <div class="emoji">🤔</div>
+                                        <div class="emoji">🤨</div>
+                                        <div class="emoji">😐</div>
+                                        <div class="emoji">😑</div>
+                                        <div class="emoji">😶</div>
+                                        <div class="emoji">😏</div>
+                                        <div class="emoji">😒</div>
+                                        <div class="emoji">🙄</div>
+                                        <div class="emoji">😬</div>
+                                        <div class="emoji">🤥</div>
+                                        <div class="emoji">😌</div>
+                                        <div class="emoji">😔</div>
+                                        <div class="emoji">😪</div>
+                                        <div class="emoji">🤤</div>
+                                        <div class="emoji">😴</div>
+                                        <div class="emoji">🥱</div>
+                                        <div class="emoji">😷</div>
+                                        <div class="emoji">🤒</div>
+                                        <div class="emoji">🤕</div>
+                                        <div class="emoji">🤢</div>
+                                        <div class="emoji">🤮</div>
+                                        <div class="emoji">🤧</div>
+                                        <div class="emoji">😵‍💫</div>
+                                        <div class="emoji">😵</div>
+                                        <div class="emoji">🥴</div>
+                                        <div class="emoji">😲</div>
+                                        <div class="emoji">😳</div>
+                                        <div class="emoji">🥺</div>
+                                        <div class="emoji">😦</div>
+                                        <div class="emoji">😧</div>
+                                        <div class="emoji">😨</div>
+                                        <div class="emoji">😰</div>
+                                        <div class="emoji">😥</div>
+                                        <div class="emoji">😢</div>
+                                        <div class="emoji">😭</div>
+                                        <div class="emoji">😱</div>
+                                        <div class="emoji">😖</div>
+                                        <div class="emoji">😣</div>
+                                        <div class="emoji">😞</div>
+                                        <div class="emoji">😓</div>
+                                        <div class="emoji">😩</div>
+                                        <div class="emoji">😫</div>
+                                        <div class="emoji">🥶</div>
+                                        <div class="emoji">🥵</div>
+                                        <div class="emoji">😤</div>
+                                        <div class="emoji">😡</div>
+                                        <div class="emoji">😠</div>
+                                        <div class="emoji">🤬</div>
+                                        <div class="emoji">😈</div>
+                                        <div class="emoji">👿</div>
+
+                                        <!-- Gestures & Hands -->
+                                        <div class="emoji">👋</div>
+                                        <div class="emoji">🤚</div>
+                                        <div class="emoji">🖐️</div>
+                                        <div class="emoji">✋</div>
+                                        <div class="emoji">🖖</div>
+                                        <div class="emoji">👌</div>
+                                        <div class="emoji">✌️</div>
+                                        <div class="emoji">🤞</div>
+                                        <div class="emoji">🤟</div>
+                                        <div class="emoji">🤘</div>
+                                        <div class="emoji">🤙</div>
+                                        <div class="emoji">🫶</div>
+                                        <div class="emoji">🫱</div>
+                                        <div class="emoji">🫲</div>
+                                        <div class="emoji">🫳</div>
+                                        <div class="emoji">🫴</div>
+                                        <div class="emoji">👍</div>
+                                        <div class="emoji">👎</div>
+                                        <div class="emoji">👊</div>
+                                        <div class="emoji">✊</div>
+                                        <div class="emoji">🤛</div>
+                                        <div class="emoji">🤜</div>
+                                        <div class="emoji">👏</div>
+                                        <div class="emoji">🙌</div>
+                                        <div class="emoji">👐</div>
+                                        <div class="emoji">🤲</div>
+                                        <div class="emoji">🙏</div>
+                                        <div class="emoji">🫰</div>
+
+                                        <!-- Hearts & Love -->
+                                        <div class="emoji">❤️</div>
+                                        <div class="emoji">🧡</div>
+                                        <div class="emoji">💛</div>
+                                        <div class="emoji">💚</div>
+                                        <div class="emoji">💙</div>
+                                        <div class="emoji">💜</div>
+                                        <div class="emoji">🖤</div>
+                                        <div class="emoji">🤍</div>
+                                        <div class="emoji">🤎</div>
+                                        <div class="emoji">💖</div>
+                                        <div class="emoji">💔</div>
+                                        <div class="emoji">💗</div>
+                                        <div class="emoji">💓</div>
+                                        <div class="emoji">💕</div>
+                                        <div class="emoji">💞</div>
+                                        <div class="emoji">💝</div>
+                                        <div class="emoji">💘</div>
+
+                                        <!-- People & Body Parts -->
+                                        <div class="emoji">👶</div>
+                                        <div class="emoji">🧒</div>
+                                        <div class="emoji">👦</div>
+                                        <div class="emoji">👧</div>
+                                        <div class="emoji">🧑</div>
+                                        <div class="emoji">👱‍♂️</div>
+                                        <div class="emoji">👱‍♀️</div>
+                                        <div class="emoji">👨</div>
+                                        <div class="emoji">👩</div>
+                                        <div class="emoji">🧓</div>
+                                        <div class="emoji">👴</div>
+                                        <div class="emoji">👵</div>
+                                        <div class="emoji">🧑‍🦰</div>
+                                        <div class="emoji">🧑‍🦱</div>
+                                        <div class="emoji">🧑‍🦳</div>
+                                        <div class="emoji">🧑‍🦲</div>
+                                        <div class="emoji">🧔‍♂️</div>
+                                        <div class="emoji">🧔‍♀️</div>
+                                        <div class="emoji">👳‍♂️</div>
+                                        <div class="emoji">👳‍♀️</div>
+                                        <div class="emoji">👮‍♂️</div>
+                                        <div class="emoji">👮‍♀️</div>
+                                        <div class="emoji">🕵️‍♂️</div>
+                                        <div class="emoji">🕵️‍♀️</div>
+                                        <div class="emoji">👀</div>
+                                        <div class="emoji">👁️</div>
+                                        <div class="emoji">👅</div>
+                                        <div class="emoji">👄</div>
+                                        <div class="emoji">🧠</div>
+                                        <div class="emoji">🫀</div>
+                                        <div class="emoji">🫁</div>
+                                        <div class="emoji">🦷</div>
+                                        <div class="emoji">🦵</div>
+                                        <div class="emoji">🦶</div>
+                                        <div class="emoji">🦴</div>
+
+                                        <!-- Objects & Symbols -->
+                                        <div class="emoji">⭐</div>
+                                        <div class="emoji">🌟</div>
+                                        <div class="emoji">💫</div>
+                                        <div class="emoji">✨</div>
+                                        <div class="emoji">⚡</div>
+                                        <div class="emoji">💥</div>
+                                        <div class="emoji">🔥</div>
+                                        <div class="emoji">🌈</div>
+                                        <div class="emoji">🌟</div>
+                                        <div class="emoji">🎈</div>
+                                        <div class="emoji">🎉</div>
+                                        <div class="emoji">🎊</div>
+                                        <div class="emoji">🎁</div>
+                                        <div class="emoji">🎀</div>
+                                        <div class="emoji">🏆</div>
+                                        <div class="emoji">🎖️</div>
+                                        <div class="emoji">🎗️</div>
+                                        <div class="emoji">🏅</div>
+
+                                        <!-- Animals & Nature -->
+                                        <div class="emoji">🐶</div>
+                                        <div class="emoji">🐱</div>
+                                        <div class="emoji">🐭</div>
+                                        <div class="emoji">🐹</div>
+                                        <div class="emoji">🐰</div>
+                                        <div class="emoji">🦊</div>
+                                        <div class="emoji">🐻</div>
+                                        <div class="emoji">🐼</div>
+                                        <div class="emoji">🐨</div>
+                                        <div class="emoji">🦁</div>
+                                        <div class="emoji">🐯</div>
+                                        <div class="emoji">🦄</div>
+                                        <div class="emoji">🦓</div>
+                                        <div class="emoji">🦍</div>
+                                        <div class="emoji">🐸</div>
+                                        <div class="emoji">🐙</div>
+                                        <div class="emoji">🌲</div>
+                                        <div class="emoji">🌳</div>
+                                        <div class="emoji">🌴</div>
+                                        <div class="emoji">🌵</div>
+                                        <div class="emoji">🌿</div>
+                                        <div class="emoji">☘️</div>
+                                        <div class="emoji">🍀</div>
+                                        <div class="emoji">🍁</div>
+                                        <div class="emoji">🍂</div>
+                                        <div class="emoji">🍃</div>
+                                        <div class="emoji">🌸</div>
+                                        <div class="emoji">🌼</div>
+                                        <div class="emoji">🌻</div>
+
+                                        <!-- Food & Drinks -->
+                                        <div class="emoji">🍎</div>
+                                        <div class="emoji">🍐</div>
+                                        <div class="emoji">🍊</div>
+                                        <div class="emoji">🍋</div>
+                                        <div class="emoji">🍌</div>
+                                        <div class="emoji">🍉</div>
+                                        <div class="emoji">🍇</div>
+                                        <div class="emoji">🍓</div>
+                                        <div class="emoji">🍒</div>
+                                        <div class="emoji">🍑</div>
+                                        <div class="emoji">🍍</div>
+                                        <div class="emoji">🥥</div>
+                                        <div class="emoji">🥑</div>
+                                        <div class="emoji">🍔</div>
+                                        <div class="emoji">🍟</div>
+                                        <div class="emoji">🍕</div>
+                                        <div class="emoji">🌭</div>
+                                        <div class="emoji">🍿</div>
+                                        <div class="emoji">🧁</div>
+                                        <div class="emoji">🍰</div>
+                                        <div class="emoji">🍦</div>
+                                        <div class="emoji">🍨</div>
+                                        <div class="emoji">🍩</div>
+                                        <div class="emoji">🍪</div>
+
+                                        <!-- Travel & Places -->
+                                        <div class="emoji">🚗</div>
+                                        <div class="emoji">🚕</div>
+                                        <div class="emoji">🚙</div>
+                                        <div class="emoji">🚌</div>
+                                        <div class="emoji">🚎</div>
+                                        <div class="emoji">🚑</div>
+                                        <div class="emoji">🚒</div>
+                                        <div class="emoji">🚓</div>
+                                        <div class="emoji">🛻</div>
+                                        <div class="emoji">🚜</div>
+                                        <div class="emoji">🚲</div>
+                                        <div class="emoji">🏍️</div>
+                                        <div class="emoji">🚂</div>
+                                        <div class="emoji">✈️</div>
+                                        <div class="emoji">🚀</div>
+                                        <div class="emoji">🚁</div>
+                                        <div class="emoji">🗺️</div>
+                                        <div class="emoji">🏔️</div>
+                                        <div class="emoji">⛰️</div>
+                                        <div class="emoji">🏕️</div>
+                                        <div class="emoji">🏖️</div>
+                                        <div class="emoji">🏜️</div>
+                                        <div class="emoji">🌋</div>
+                                        <div class="emoji">🗽</div>
+                                        <div class="emoji">🗿</div>
+                                        <div class="emoji">🕌</div>
+                                        <div class="emoji">⛩️</div>
+                                        <div class="emoji">🕍</div>
+
+                                        <!-- Symbols & Miscellaneous -->
+                                        <div class="emoji">✔️</div>
+                                        <div class="emoji">✖️</div>
+                                        <div class="emoji">➕</div>
+                                        <div class="emoji">➖</div>
+                                        <div class="emoji">➗</div>
+                                        <div class="emoji">🔘</div>
+                                        <div class="emoji">🔲</div>
+                                        <div class="emoji">🔳</div>
+                                        <div class="emoji">🟦</div>
+                                        <div class="emoji">🟥</div>
+                                        <div class="emoji">🟧</div>
+                                        <div class="emoji">🟨</div>
+                                        <div class="emoji">🟩</div>
+                                        <div class="emoji">🟪</div>
+                                        <div class="emoji">🟫</div>
+                                        <div class="emoji">♥️</div>
+                                        <div class="emoji">♠️</div>
+                                        <div class="emoji">♦️</div>
+                                        <div class="emoji">♣️</div>
+                                        <div class="emoji">🃏</div>
+                                        <div class="emoji">🎴</div>
+                                        <div class="emoji">🔰</div>
+                                        <div class="emoji">📛</div>
+                                        <div class="emoji">🛑</div>
+                                        <div class="emoji">🚸</div>
+                                        <div class="emoji">⚠️</div>
+                                        <div class="emoji">🚫</div>
+                                        <div class="emoji">🆘</div>
+
+                                    </div>
+                                </div>
+                                <svg onclick="imogifloat()" class="imogi point" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM8.39747 15.5534C8.64413 15.2206 9.11385 15.1508 9.44661 15.3975C10.175 15.9373 11.0541 16.25 12 16.25C12.9459 16.25 13.825 15.9373 14.5534 15.3975C14.8862 15.1508 15.3559 15.2206 15.6025 15.5534C15.8492 15.8862 15.7794 16.3559 15.4466 16.6025C14.4742 17.3233 13.285 17.75 12 17.75C10.715 17.75 9.5258 17.3233 8.55339 16.6025C8.22062 16.3559 8.15082 15.8862 8.39747 15.5534Z"
+                                            fill="#1C274C"></path>
+                                        <path
+                                            d="M16 10.5C16 11.3284 15.5523 12 15 12C14.4477 12 14 11.3284 14 10.5C14 9.67157 14.4477 9 15 9C15.5523 9 16 9.67157 16 10.5Z"
+                                            fill="#1C274C"></path>
+                                        <path
+                                            d="M10 10.5C10 11.3284 9.55229 12 9 12C8.44772 12 8 11.3284 8 10.5C8 9.67157 8.44772 9 9 9C9.55229 9 10 9.67157 10 10.5Z"
+                                            fill="#1C274C"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <textarea class="comment" name="Messages" id="inputmessage"
+                                placeholder="Type Messages"></textarea>
+                            <div style="position: relative;">
+                                <div id="fixedTabMenumess" style="display: none;">
+                                    <div class="tabs1">
+                                        <label for="poimagemes" class="tab"><i class="fas fa-image"></i></label>
+                                        <label for="povideomes" class="tab"><i class="fas fa-video"></i></label>
+                                        <div onclick="floattabmes('text')" class="tab"><i class="fas fa-file-alt"></i>
+                                        </div>
+                                        <div onclick="floattabmes('code')" class="tab"><i class="fas fa-code"></i></div>
+                                        <label for="podocmes" class="tab"><i class="fas fa-file"></i></label>
+                                    </div>
+                                    <input id="poimagemes" type="file" accept="image/*" hidden>
+                                    <input id="povideomes" type="file" accept="video/*" hidden>
+                                    <input id="podocmes" type="file" hidden>
+                                </div>
+                                <svg id="postTabmes" onclick="sendMenufloat()" class="svg mart point"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M21 11V15.8C21 16.9201 21 17.4802 20.782 17.908C20.5903 18.2843 20.2843 18.5903 19.908 18.782C19.4802 19 18.9201 19 17.8 19H6.2C5.0799 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2C3 7.0799 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H15M21 11L15 5M21 11H16.6C16.0399 11 15.7599 11 15.546 10.891C15.3578 10.7951 15.2049 10.6422 15.109 10.454C15 10.2401 15 9.96005 15 9.4V5"
+                                            stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div><span onclick="sendtext()" class="clrorg send point no-select">Send</span></div>
+                        </div>
+
+                        <div class="maifon clrorg ">
+
+                        </div>
+                    </div>
+                    <div id="pfTabmes" class="postfloat" style="display: none;">
+                        <div class="postcon">
+                            <div class="cross">
+                                <svg onclick="hidefloat1mes()" class="svg point" fill="var(--black)"
+                                    viewBox="0 0 490 490" xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <polygon
+                                            points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 ">
+                                        </polygon>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="postda1 center">
+                                <img id="imagepremes" class="postda" src="" alt="" style="display: none;">
+                                <video id="videopremes" class="postda" controls="" src="" style="display: none;">
+                                    <source src="" type="video/mp4">
+                                </video>
+                                <div id="textpremes" style="display: flex;">
+                                    <div id="text-containermes" contenteditable="true">
+                                        <p></p>
+                                    </div>
+
+                                    <div class="controls">
+                                        <label for="fontSizemes">Font Size:</label>
+                                        <input type="number" id="fontSizemes" value="16" min="8"
+                                            onchange="updateTextStylemes()">
+
+                                        <label for="alignmes">Align Text:</label>
+                                        <select id="alignmes" onchange="updateTextStylemes()">
+                                            <option value="left">Left</option>
+                                            <option value="center">Center</option>
+                                            <option value="right">Right</option>
+                                        </select>
+
+                                        <label for="bgColormes">BG Color:</label>
+                                        <input type="color" id="bgColormes" value="#ffffff"
+                                            onchange="updateTextStylemes()">
+
+                                        <label for="textColormes">Text Color:</label>
+                                        <input type="color" id="textColormes" value="#000000"
+                                            onchange="updateTextStylemes()">
+                                    </div>
+                                </div>
+                                <div id="codepremes" class="code" style="display: none;">
+                                    <code class="code1">
+                                        <div id="line-numbersmes">1<br>2</div>
+                                        <textarea class="codet" id="code-inputmes" oninput="updateLineNumbersmes()" onscroll="syncScrollmes()">// Type your code hear
+                    </textarea></code>
+                                </div>
+                                <div id="filepremes" class="file center" style="display: none;">
+                                    <div class="center filer"><svg width="150px" height="150px" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)">
+                                            <path
+                                                d="M21 11V15.8C21 16.9201 21 17.4802 20.782 17.908C20.5903 18.2843 20.2843 18.5903 19.908 18.782C19.4802 19 18.9201 19 17.8 19H6.2C5.0799 19 4.51984 19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.2C3 7.0799 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H15M21 11L15 5M21 11H16.6C16.0399 11 15.7599 11 15.546 10.891C15.3578 10.7951 15.2049 10.6422 15.109 10.454C15 10.2401 15 9.96005 15 9.4V5"
+                                                stroke="var(--black)" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </path>
+                                            </g>
+                                        </svg>
+                                        <p id="filenames"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tithead">
+                                <div class="contit">
+                                    <textarea name="titlep" id="titlepmes" class="titlep"
+                                        placeholder="Attach some message..."></textarea>
+                                </div>
+                            </div>
+                            <div class="poupload">
+                                <button class="buttonu point" onclick="senddata()">Send</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="/js/nave.js"></script>
+        <script src="/js/codefile.js"></script>
+        <script src="/js/message.js"></script>
+    </body>
+
+    </html>
